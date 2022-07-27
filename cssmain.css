@@ -1,0 +1,210 @@
+*
+{
+    box-sizing: border-box;
+}
+.flex
+{
+    display: flex;
+}
+nav.flex
+{
+    background-color: rgb(77, 77, 160);
+}
+ul.menu
+{
+    padding: 0;
+    margin:0;
+}
+ul.menu>li
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.menu>li>a
+{
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    color: white;
+    border-right: 0.01rem solid white;
+}
+ul.menu li:last-child a:last-child
+{
+    border-right: none;
+}
+nav.flex a:hover
+{
+    background-color: rgb(14, 14, 203);
+    color: white;
+}
+nav.flex div:last-child
+{
+    margin:0;
+}
+nav.flex> div > a
+{
+    padding: 0.5rem;
+    text-decoration: none;
+}
+.icon /*xài cho chuông và user*/
+{
+    margin-left: auto;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 6rem;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav.flex>div:last-child
+{
+    position: relative;
+}
+
+nav.flex>div>div
+{
+    position: absolute;
+    top:3rem;
+    right:0;
+    display: none;
+    background-color: rgb(12, 101, 101);
+    font-size: 0.7rem;
+    text-align: left;
+    padding-left: 0.5rem;
+    min-width: 12rem;
+}
+nav.flex>div>div.bell
+{
+    position: absolute;
+    top:3.5rem;
+    right: 0.5rem;
+}
+nav.flex>div.icon>div.user img
+{
+    width: 12rem;
+    padding: 0.4rem;
+    border-radius: 4rem;
+}
+nav.flex>div>div div *
+{
+    font-size: 0.7rem;
+}
+nav.flex div.icon:hover > div
+{
+    display: block;
+}
+
+ /* header */
+header img
+{
+    width: 10rem;
+}
+header div.flex
+{
+    background:linear-gradient(180deg, rgb(77,77,160), rgb(110, 155, 171));
+    margin-top:.5rem;
+    justify-content: space-between;
+}
+header div.flex div.flex div
+{
+    text-align:center;
+}
+header div.flex div.flex div *
+{
+    margin:0.5rem;
+}
+header div.flex>h1
+{
+    vertical-align: middle;
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+header *
+{
+    color: white;
+}
+
+/*body*/
+div.body
+{
+    margin:0.5rem 10%;
+}
+div.adv
+{
+    width: 10%;
+    background:linear-gradient(180deg, rgb(110, 155, 171), rgb(77, 77, 160));
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    font-size: 3rem;
+    border-radius: 1.5rem;
+    
+    
+}
+div.mid
+{
+    flex:80%;
+    background: linear-gradient(180deg, rgb(110, 155, 171), rgb(77, 77, 160));
+    margin:0 0.5rem;
+    
+}
+div.body div.mid div h2
+{
+    background-color: rgb(31, 115, 145);
+    margin:0;
+    padding: 1rem;
+}
+.row
+{
+    justify-content: space-between;
+}
+.mid>div
+{
+    border:2px solid white;
+}
+.row >*
+{
+    padding: 0.5rem;
+}
+.row img
+{
+    width: 8rem;
+    border-radius: 4rem;
+}
+div.one
+{
+    position: fixed;
+    top: 250px;
+    left: 0.5rem;
+}
+div.two
+{
+    position: fixed;
+    top: 250px;
+    right: 0.5rem;
+}
+/* footer */
+footer{
+    background-color:#0b6fa3;
+    justify-content: space-between;
+}
+footer div:first-child *
+{
+    padding-left: 1rem;
+}
+footer a
+{
+    text-decoration: none;
+}
+footer a:hover
+{
+    color:white;
+}
